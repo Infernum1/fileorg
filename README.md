@@ -6,17 +6,15 @@ Rust File Organizer is a command-line utility written in Rust that organizes fil
 
 - Creates subdirectories based on file extensions and moves files into corresponding directories.
 
-## Getting Started
-
 ## Installation
 
 ### From crates.io
 
 You can install the File Organizer directly from [crates.io](https://crates.io/crates/fileorg) using Cargo:
 
-    ```sh
-    cargo install fileorg
-    ```
+```sh
+cargo install fileorg
+```
 
 ### From source
 
@@ -46,12 +44,12 @@ To organize files in a directory, run the following command:
 
 ### If installed from crates.io:
 
-    ```sh
-    fileorg <directory_path>
-    ```
+```sh
+fileorg <directory_path>
+```
 
 ### If built from source:
 
-    ```sh
-    ./target/release/fileorg <directory_path>
-    ```
+```sh
+./target/release/fileorg <directory_path>
+```
