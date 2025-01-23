@@ -1,0 +1,4 @@
+copy = true
+include_hidden = false
+others_directory = "Others"
+log_file = "file_organizer.log"
