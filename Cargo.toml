@@ -1,6 +1,6 @@
 [package]
 name = "fileorg"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["Infernum <infernum1212@gmail.com>"]
 description = "A simple File Organizer CLI tool made in rust."
