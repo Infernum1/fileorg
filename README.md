@@ -58,9 +58,21 @@ fileorg <directory_path> [OPTIONS]
 ./target/release/fileorg <directory_path> [OPTIONS]
 ```
 
-*Run `fileorg` without any arguments to see all valid `OPTIONS`*
+## Options
+| Option | Description | Default |
+|----------|----------|----------|
+| --copy   | Copy files instead of moving them   | False   |
+| --log_file   | Specify the log file path   | "file_organizer.log"   |
+| --config    | Provide a path to a configuration file (`.toml` format)   | None   |
+| --help, -h | Print help| - |
+| --version, -V| Print version| - |
 
-## Configuration Options
+### NOTE
+If you are using a config file (`--config` flag) in the CLI, all other flags will be ignored. If you would like to only use the `--copy` and `--log_file` flags individually, then there is no need to create a config file.
+The config file only allows more control over handling hidden files and miscellaneous stuff.
+
+
+## Configuration File
 
 You can customize the behavior of the File Organizer by providing a configuration file (e.g., `config.toml`). The following fields are supported:
 
@@ -88,6 +100,3 @@ log_file = "file_organizer.log"
 
 All operations (e.g., file moves, copies, skips) are logged in the file specified in the configuration.
 
-## NOTE
-If you are using a config file in the CLI, all other flags will be ignored. If you would like to only use the `--copy` and `--log_file` flags individually, then there is no need to create a config file.
-The config file only allows more control over handling hidden files and miscellaneous stuff.

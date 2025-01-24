@@ -1,6 +1,6 @@
 [package]
 name = "fileorg"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 authors = ["Infernum <infernum1212@gmail.com>"]
 description = "A simple File Organizer CLI tool made in rust."
@@ -16,3 +16,4 @@ clap = { version = "4.5.27", features = ["derive"] }
 indicatif = "0.17.9"                                
 serde = { version = "1.0.217", features = ["derive"] } 
 toml = "0.8.19"
+chrono = "0.4.39"
